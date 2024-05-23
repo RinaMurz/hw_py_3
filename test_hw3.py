@@ -1,4 +1,4 @@
-import math
+from math import pi
 import random
 
 def test_greeting():
@@ -12,7 +12,7 @@ def test_greeting():
 
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
-
+    print(output)
 
 def test_rectangle():
     """
@@ -22,7 +22,7 @@ def test_rectangle():
     a = 10
     b = 20
     #  сосчитайте периметр
-    perimeter = (a * 2) + (b * 2)
+    perimeter = 2 * (a + b)
 
     assert perimeter == 60
 
@@ -39,14 +39,15 @@ def test_circle():
     """
     r = 23
 
-    area = math.pi * r ** 2
+    area = pi * r ** 2
 
     assert area == 1661.9025137490005
+    print(area)
 
-    length = (2 * math.pi) * r
+    length = 2 * pi * r
 
     assert length == 144.51326206513048
-
+    print(length)
 
 def test_random_list():
     """
